@@ -3,12 +3,12 @@ calculate-mean-heap
 
 A simple Python script for calculating the mean JVM Heap (OldGen and PermGen) from a detailed GC log file. Tested with Oracle's Java Version 7. Works with the following GCs:
 
-* ParallelGC (`-XX:+UseParallelGC`) - Default GC in Oracle JRE/JDK as of Version 6
-* ParallelOldGC (`-XX:+UseParallelOldGC`)
+* ParallelGC `-XX:+UseParallelGC` - Default GC in Oracle JRE/JDK as of Version 6
+* ParallelOldGC `-XX:+UseParallelOldGC`
 
 Does not work with SerialGC, CMS or G1. 
 
-Requires that you start your JVM with detailed GC logging (`-XX:-PrintGCDetails`).
+Requires that you start your JVM with detailed GC logging `-XX:-PrintGCDetails`.
 
 Usage
 --------
@@ -24,4 +24,4 @@ After restarting your Java application, Garbage Collection details will be logge
 Why
 -------
 
-This script has been written mainly for Atlassian's JIRA GC Tuning guide. See [here][https://confluence.atlassian.com/display/ATLAS/Garbage+Collection+(GC)+Tuning+Guide] for all glory details.
+This script has been written mainly for Atlassian's JIRA GC Tuning guide. See [here](https://confluence.atlassian.com/display/ATLAS/Garbage+Collection+\(GC\)+Tuning+Guide) for all glory details.
